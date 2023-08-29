@@ -3,7 +3,7 @@ from tkinter import *
 #------------------------------COLORS------------------------
 NAVY_BLUE = "#445069"
 GRAY = "#9E9FA5"
-LIGHT_BLUE = "#C5DFF8"
+CREAM = "#FAF0D7"
 #-----------------------------FUNCTIONS-------------------
 def show_display(number):
     global op
@@ -25,7 +25,7 @@ def clear():
 #-----------------------------UI design----------------------
 calculator = Tk()
 calculator.title("Calculator")
-calculator.geometry("395x500")
+calculator.geometry("395x410")
 
 op = ""
 text_input = StringVar()
@@ -87,10 +87,10 @@ btn_division = Button(calculator,text="/", bg=GRAY, fg="black",width=5,padx=16,p
 btn_division.grid(row=4,column=3)
 
 #row = 5
-btn_clear = Button(calculator,text="CLEAR", bg=LIGHT_BLUE, fg="black",width=5,padx=16,pady=16  ,font=("Arial",15), command=clear)
+btn_clear = Button(calculator,text="CLEAR", bg=GRAY, fg="black",width=5,padx=16,pady=16  ,font=("Arial",15), command=clear)
 btn_clear.grid(row=5,column=0,columnspan=2,sticky="we")
 
-btn_calculate = Button(calculator,text="=", bg=LIGHT_BLUE, fg="black",width=5,padx=16,pady=16 ,font=("Arial",15), command=calculate)
+btn_calculate = Button(calculator,text="=", bg=GRAY, fg="black",width=5,padx=16,pady=16 ,font=("Arial",15), command=calculate)
 btn_calculate.grid(row=5,column=2,columnspan=2,sticky="we")
 
 calculator.mainloop()
