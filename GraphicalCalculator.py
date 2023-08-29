@@ -4,7 +4,22 @@ from tkinter import *
 NAVY_BLUE = "#445069"
 GRAY = "#9E9FA5"
 LIGHT_BLUE = "#C5DFF8"
+#-----------------------------FUNCTIONS-------------------
+def show_display(number):
+    global op
+    op = op + str(number)
+    text_input.set(op)
 
+def calculate():
+    global op
+    answer = str(eval(op))
+    text_input.set(answer)
+    op = answer
+
+def clear():
+    global op
+    op = ""
+    text_input.set(op)
 
 
 #-----------------------------UI design----------------------
@@ -12,6 +27,7 @@ calculator = Tk()
 calculator.title("Calculator")
 calculator.geometry("395x500")
 
+op = ""
 text_input = StringVar()
 
 #row = 0
