@@ -25,13 +25,13 @@ def clear():
 #-----------------------------UI design----------------------
 calculator = Tk()
 calculator.title("Calculator")
-calculator.geometry("395x410")
+calculator.geometry("420x440")
 
 op = ""
 text_input = StringVar()
 
 #row = 0
-display = Entry(calculator,textvariable=text_input,width=16,bd=5,font=("Arial", 32), bg=NAVY_BLUE,fg="#FAF0D7")
+display = Entry(calculator,textvariable=text_input,width=17,bd=5,font=("Arial", 32), bg=NAVY_BLUE,fg="#FAF0D7")
 display.grid(columnspan=4)
 
 #row = 1
